@@ -11,11 +11,11 @@ what do you need to run the project?
 ### how can we download the application?
 #### SSH
 ```
-git@github.com:mateusferian/drive-master.git
+git@github.com:mateusferian/blog-crud-in-node-js.git
 ```
 #### HTTPs
 ```
-https://github.com/mateusferian/drive-master.git
+https://github.com/mateusferian/blog-crud-in-node-js.git
 ```
 
 ### code versioning best practices
