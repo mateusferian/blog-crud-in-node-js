@@ -3,7 +3,7 @@ const BlogServices = require('../services/BlogService');
 exports.findAllBlog = async (req, res) => {
     try {
         const blogs = await BlogServices.findAllBlog();
-        console.log('listing blogs:', blogs);
+        console.log('listing blogs');
         res.json({ data: blogs, status: 'success' });
     } catch (err) {
         console.error('error when listing blogs:', err);
@@ -14,7 +14,7 @@ exports.findAllBlog = async (req, res) => {
 exports.createBlog = async (req, res) => {
     try{
         const blog = await BlogServices.createBlog(req.body);
-        console.log('creating blogs:', blog);
+        console.log('creating blogs:', req.params.id);
         res.json({data: blog, status: 'success'});
     }catch(err){
         console.error('error when creating blog:', err);
