@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const blogRouter = require('./routes/BlogRoute');
 const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('./swagger_output.json');
+const swaggerDocument = require('./config/swagger_output.json');
 
 const app = express();
 
